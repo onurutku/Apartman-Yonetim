@@ -29,10 +29,15 @@ Namespace My
             Me.SaveMySettingsOnExit = true
             Me.ShutDownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses
         End Sub
-
-        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>
+        
+        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.PhoneBook.MainForm
+            Me.MainForm = Global.ApartmentManagement.MainForm
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
+        Protected Overrides Sub OnCreateSplashScreen()
+            Me.SplashScreen = Global.ApartmentManagement.Form1
         End Sub
     End Class
 End Namespace
