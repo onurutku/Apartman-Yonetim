@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>ApartmentManagement</RootNamespace>
-    <StartupObject>PhoneBook.MainForm</StartupObject>
+    <StartupObject>ApartmentManagement.MainForm</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
   </PropertyGroup>
