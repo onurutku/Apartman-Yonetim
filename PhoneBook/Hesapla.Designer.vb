@@ -27,6 +27,9 @@ Partial Class Hesapla
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ComboBox1
@@ -48,7 +51,7 @@ Partial Class Hesapla
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(130, 134)
+        Me.Button1.Location = New System.Drawing.Point(223, 243)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 2
@@ -73,13 +76,41 @@ Partial Class Hesapla
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Ay"
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(105, 97)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(100, 23)
+        Me.TextBox1.TabIndex = 6
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(84, 126)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(121, 96)
+        Me.RichTextBox1.TabIndex = 7
+        Me.RichTextBox1.Text = ""
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(29, 126)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(56, 15)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "Açıklama"
+        '
         'Hesapla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(390, 312)
+        Me.ClientSize = New System.Drawing.Size(310, 278)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
@@ -99,4 +130,7 @@ Partial Class Hesapla
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Label3 As Label
 End Class
