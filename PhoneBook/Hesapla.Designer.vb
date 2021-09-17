@@ -31,6 +31,7 @@ Partial Class Hesapla
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ComboBox1
@@ -111,6 +112,15 @@ Partial Class Hesapla
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "Label4"
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(278, 150)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(41, 15)
+        Me.Label5.TabIndex = 10
+        Me.Label5.Text = "Label5"
+        '
         'Hesapla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -118,6 +128,7 @@ Partial Class Hesapla
         Me.AutoScroll = True
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(367, 360)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.RichTextBox1)
@@ -145,4 +156,5 @@ Partial Class Hesapla
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class
