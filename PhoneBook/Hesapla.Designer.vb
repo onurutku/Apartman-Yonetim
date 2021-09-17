@@ -30,6 +30,7 @@ Partial Class Hesapla
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ComboBox1
@@ -101,6 +102,15 @@ Partial Class Hesapla
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Açıklama"
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(245, 97)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Hesapla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -108,6 +118,7 @@ Partial Class Hesapla
         Me.AutoScroll = True
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(367, 360)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.TextBox1)
@@ -133,4 +144,5 @@ Partial Class Hesapla
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents Button2 As Button
 End Class
