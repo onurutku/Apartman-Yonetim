@@ -22,7 +22,7 @@ Partial Class Hesapla
     'Kod düzenleyicisini kullanarak değiştirmeyin.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.yil_ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -32,14 +32,14 @@ Partial Class Hesapla
         Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'ComboBox1
+        'yil_ComboBox1
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"2021", "2022", "2023"})
-        Me.ComboBox1.Location = New System.Drawing.Point(84, 39)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 23)
-        Me.ComboBox1.TabIndex = 0
+        Me.yil_ComboBox1.FormattingEnabled = True
+        Me.yil_ComboBox1.Items.AddRange(New Object() {"2021", "2022", "2023"})
+        Me.yil_ComboBox1.Location = New System.Drawing.Point(84, 39)
+        Me.yil_ComboBox1.Name = "yil_ComboBox1"
+        Me.yil_ComboBox1.Size = New System.Drawing.Size(121, 23)
+        Me.yil_ComboBox1.TabIndex = 0
         '
         'ComboBox2
         '
@@ -115,7 +115,7 @@ Partial Class Hesapla
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.yil_ComboBox1)
         Me.Name = "Hesapla"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Hesapla"
@@ -125,7 +125,7 @@ Partial Class Hesapla
 
     End Sub
 
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents yil_ComboBox1 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
