@@ -287,7 +287,7 @@ Partial Class Düzenle
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(562, 513)
+        Me.ClientSize = New System.Drawing.Size(652, 589)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.borc_RichTextBox1)
         Me.Controls.Add(Me.borcuvar_RadioButton1)
