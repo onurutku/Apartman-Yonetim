@@ -27,15 +27,16 @@ Partial Class Hesapla
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.aidat_TextBox1 = New System.Windows.Forms.TextBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.gider_TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.kalan_TextBox3 = New System.Windows.Forms.TextBox()
         Me.giderler_ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.aidatlar_ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'yil_ComboBox1
@@ -82,18 +83,19 @@ Partial Class Hesapla
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Ay"
         '
-        'TextBox1
+        'aidat_TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(105, 97)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(100, 23)
-        Me.TextBox1.TabIndex = 6
+        Me.aidat_TextBox1.Location = New System.Drawing.Point(105, 97)
+        Me.aidat_TextBox1.Name = "aidat_TextBox1"
+        Me.aidat_TextBox1.ReadOnly = True
+        Me.aidat_TextBox1.Size = New System.Drawing.Size(100, 23)
+        Me.aidat_TextBox1.TabIndex = 6
         '
         'RichTextBox1
         '
         Me.RichTextBox1.Location = New System.Drawing.Point(94, 189)
         Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.ReadOnly = True
         Me.RichTextBox1.Size = New System.Drawing.Size(232, 160)
         Me.RichTextBox1.TabIndex = 7
         Me.RichTextBox1.Text = ""
@@ -142,13 +144,13 @@ Partial Class Hesapla
         Me.Label6.TabIndex = 13
         Me.Label6.Text = "Kalan"
         '
-        'TextBox3
+        'kalan_TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(105, 155)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(100, 23)
-        Me.TextBox3.TabIndex = 12
+        Me.kalan_TextBox3.Location = New System.Drawing.Point(105, 155)
+        Me.kalan_TextBox3.Name = "kalan_TextBox3"
+        Me.kalan_TextBox3.ReadOnly = True
+        Me.kalan_TextBox3.Size = New System.Drawing.Size(100, 23)
+        Me.kalan_TextBox3.TabIndex = 12
         '
         'giderler_ComboBox1
         '
@@ -157,6 +159,16 @@ Partial Class Hesapla
         Me.giderler_ComboBox1.Name = "giderler_ComboBox1"
         Me.giderler_ComboBox1.Size = New System.Drawing.Size(121, 23)
         Me.giderler_ComboBox1.TabIndex = 14
+        Me.giderler_ComboBox1.Visible = False
+        '
+        'aidatlar_ComboBox1
+        '
+        Me.aidatlar_ComboBox1.FormattingEnabled = True
+        Me.aidatlar_ComboBox1.Location = New System.Drawing.Point(212, 98)
+        Me.aidatlar_ComboBox1.Name = "aidatlar_ComboBox1"
+        Me.aidatlar_ComboBox1.Size = New System.Drawing.Size(121, 23)
+        Me.aidatlar_ComboBox1.TabIndex = 15
+        Me.aidatlar_ComboBox1.Visible = False
         '
         'Hesapla
         '
@@ -164,25 +176,25 @@ Partial Class Hesapla
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(338, 390)
+        Me.ClientSize = New System.Drawing.Size(364, 399)
+        Me.Controls.Add(Me.aidatlar_ComboBox1)
         Me.Controls.Add(Me.giderler_ComboBox1)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.kalan_TextBox3)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.gider_TextBox2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.RichTextBox1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.aidat_TextBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ay_ComboBox2)
         Me.Controls.Add(Me.yil_ComboBox1)
         Me.Name = "Hesapla"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hesapla"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -200,7 +212,9 @@ Partial Class Hesapla
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents kalan_TextBox3 As TextBox
     Friend WithEvents giderler_ComboBox1 As ComboBox
     Friend WithEvents gider_TextBox2 As TextBox
+    Friend WithEvents aidatlar_ComboBox1 As ComboBox
+    Friend WithEvents aidat_TextBox1 As TextBox
 End Class
